@@ -1,0 +1,88 @@
+/*Color palette*/
+/*header= #7c65f2*/
+/*white font= #e6e4f4;*/
+sidebar=
+vline=
+
+
+
+/*Universal styles*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Header styles*/
+
+header {
+  height: 4rem;
+  background: #7c65f2;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+header p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 1rem;
+  color: #e6e4f4;
+  align-self: flex-start;
+}
+
+#logo {
+  font-weight: 700;
+  color: white;
+}
+
+#bell {
+  margin-left: 70%;
+  max-width: 1.5rem;
+  max-height: auto;
+}
+
+#vline {
+  height: 2.5rem;
+  width: 2px;
+  background: rgba(104, 82, 195, 0.79);
+  margin-top: .8rem;
+  margin-left: 2%;
+}
+
+#prof-pic {
+  border-radius: 50px;
+  height: 2.1rem;
+  width: auto;
+  margin-top: 1rem;
+  margin-left: 2%;
+}
+
+#prof-name {
+  margin: 0;
+  font-size: .7rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 85%;
+}
+
+/*Main body styles*/
+
+body {
+  position: absolute;
+  background: #584779;
+  width: 100%;
+  height: 100rem;
+  z-index: -1;
+}
+
+main {
+  float: right;
+  background: white;
+  width: 90%;
+  height: 100%;
+}
