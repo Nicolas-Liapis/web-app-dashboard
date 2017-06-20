@@ -1,12 +1,53 @@
 @media only screen and (min-width: 768px) {
-    #prof-name {
-      font-size: 1rem;
+  #bell {
+    margin-left: 70%;
   }
-  #prof-pic {
-    border-radius: 50px;
-    height: 2.5rem;
-    width: auto;
-    margin-top: .75rem;
-    margin-left: 2%;
+  #prof-name {
+    margin-left: 85%;
+  }
+
+  main {
+    width: calc(100% / 12 * 11);
+  }
+
+  #search {
+    width: calc(100% / 12 * 5);
+    height: 2rem;
+    top: 20%;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 1rem;
+    color: lightgrey;
+    padding: .3rem;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1rem;
+    color: lightgrey;
+    padding: .3rem;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 1rem;
+    color: lightgrey;
+    padding: .3rem;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 1rem;
+    color: lightgrey;
+    padding: .3rem;
+  }
+
+  .search {
+    width: calc(100% / 12 * 10);
+
+  }
+
+  .left-dash {
+    width: 2rem;
+    float: left;
+    position: relative;
+    left: 2%;
+    top: 2%;
   }
 }
