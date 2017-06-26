@@ -10,6 +10,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  /*border: 1px solid red;*/
 }
 
 /*Column sizes*/
@@ -44,7 +45,7 @@
 /*Header styles*/
 
 header {
-  height: 5%;
+  height: 3rem;
   background: #7c65f2;
   position: relative;
   color: white;
@@ -70,23 +71,23 @@ header p {
 }
 
 #bell {
-  width: 1.5rem;
+  width: 1rem;
   height: auto;
-  margin-left: 55%;
+  margin-left: 60%;
+  margin-top: 2%;
 }
 
 #vline {
-  height: 2.5rem;
+  height: 70%;
   width: 2px;
   background: rgba(104, 82, 195, 0.79);
-  position: relative;
-  top: 25%;
+  margin: auto 0;
   margin-left: 2%;
 }
 
 #prof-pic {
   border-radius: 50px;
-  height: 3rem;
+  height: 60%;
   width: auto;
   position: relative;
   top: 20%;
@@ -95,7 +96,7 @@ header p {
 
 #prof-name {
   margin: 0;
-  font-size: 1rem;
+  font-size: .5rem;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -108,7 +109,7 @@ body {
   position: absolute;
   background: #584779;
   width: 100%;
-  height: 100rem;
+  /*height: 100%;*/
   z-index: -1;
 }
 
@@ -124,7 +125,7 @@ main {
   float: left;
   position: relative;
   left: 4%;
-  top: 2%;
+  margin-top: 2rem;
 }
 
 .left-dash img {
@@ -140,6 +141,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: .6rem;
 }
 
 /*search-box*/
@@ -149,13 +151,11 @@ main {
   background: #eceaf9;
   border: 1px solid #cac6cb;
   width: calc(100% / 12 * 8);
-  /*margin-left: calc(100% / 12 * 1.71);*/
-  justify
 }
 
 #search {
   width: calc(100% / 12 * 11);
-  height: 1.1rem;
+  line-height: 1rem;
   float: right;
   border-style: none;
   border-radius: 5px;
@@ -163,6 +163,10 @@ main {
   position: relative;
   top: 30%;
   margin-right: 1rem;
+  background: white url(../icons/search.png) no-repeat;
+  font-size: .9rem;
+  background-position: 95% 50%;
+  background-size: 7%;
 }
 
 ::-webkit-input-placeholder {
@@ -204,11 +208,13 @@ main {
   height: calc(100% /12);
   width: calc(100% /12 * 11.5);
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-right: .5rem;
 }
 
 .demo p {
@@ -220,7 +226,6 @@ main {
   color: white;
   font-weight: 600;
   margin: 0 1rem;
-
 }
 
 #cross {
@@ -229,7 +234,7 @@ main {
   position: relative;
   width: 5px;
   transform: rotate(45deg);
-  margin: auto;
+
 
 }
 #cross:after {
@@ -240,5 +245,117 @@ main {
   position: absolute;
   top: 10px;
   width: 25px;
-  margin: auto;
+
+}
+
+/*Chart containers*/
+
+.main-chart-container {
+  position: relative;
+  height:40vh;
+  /*width:80vw;*/
+}
+
+.chartControls {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.sec-charts-container {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.sec-chart {
+  border: 1px solid #d2cfd5;
+  border-bottom: none;
+  height: 300px;
+}
+
+.social-container {
+  border: 1px solid #d2cfd5;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social-box {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: .5rem;
+  border: 1px solid #d2cfd5;
+  border-radius: 5px;
+  width: 10rem;
+  height: 5rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(227, 225, 233, 0.31);
+
+}
+
+
+/*Charts styles*/
+
+.chartControls span {
+  margin-top: 1rem;
+  margin-right: .2rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #5c5e60;
+}
+
+#chartTitle {
+  display: inline-block;
+  float: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5c5e60;
+}
+
+#chart1Title {
+  padding-left: 1rem;
+  font-size: .8rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+/*Social media icons*/
+
+.svg-box {
+  width: 4rem;
+  height: 4rem;
+  background: #7c65f2;
+  border-radius: 50%;
+}
+
+.svg-pic {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  fill: white;
+}
+
+.social-span {
+  float: right;
+}
+
+.social-box span {
+  color: #7c65f2;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.social-box p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 5rem;
+  margin-top: -3rem;
+  color: #5c5e60;
 }
