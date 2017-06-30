@@ -13,34 +13,6 @@
   /*border: 1px solid red;*/
 }
 
-/*Column sizes*/
-
-[class^="col-"] {
-  float: right;
-  padding: 0 1rem;
-}
-
-.col-1 {
-  width: calc(100% / 12);
-}
-
-.col-5 {
-  width: calc(100% / 12 * 5);
-}
-
-.col-6 {
-  width: calc(100% / 12 * 6);
-}
-
-.col-7 {
-  width: calc(100% / 12 * 7);
-}
-
-.col-9 {
-  width: calc(100% / 12 * 9);
-}
-
-
 
 /*Header styles*/
 
@@ -118,6 +90,7 @@ main {
   height: 100%;
   width: calc(100% /12 * 10);
   float: right;
+  display: block;
 }
 
 .left-dash {
@@ -154,7 +127,7 @@ main {
 }
 
 #search {
-  width: calc(100% / 12 * 11);
+  width: calc(100% / 12 * 10);
   line-height: 1rem;
   float: right;
   border-style: none;
@@ -268,37 +241,57 @@ main {
   margin: 0;
 }
 
-.sec-chart {
-  border: 1px solid #d2cfd5;
-  border-bottom: none;
-  height: 300px;
-}
-
-.social-container {
-  border: 1px solid #d2cfd5;
-  height: 10rem;
+.sec-charts-container1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.sec-chart {
+  border: 1px solid #d2cfd5;
+  border-bottom: none;
+  height: 220px;
+}
+
+.widget-area {
+  border: 1px solid #d2cfd5;
+  /*border-bottom: none;*/
+  height: 500px;
+}
+
+.social-container {
+  /*border: 1px solid #d2cfd5;*/
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
 }
 
 .social-box {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin-right: .5rem;
+  margin: 2rem;
   border: 1px solid #d2cfd5;
   border-radius: 5px;
   width: 10rem;
   height: 5rem;
   padding: .5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: block;
   background-color: rgba(227, 225, 233, 0.31);
 
 }
 
+.container {
+  border: 1px solid #d2cfd5;
+  width: 99%;
+}
+
+/*.separator {
+  background: #cac6cb;
+  border: 1px solid #cac6cb;
+  width: 100%;
+}*/
 
 /*Charts styles*/
 
@@ -311,19 +304,22 @@ main {
 }
 
 #chartTitle {
-  display: inline-block;
+  display: block;
   float: left;
+  clear: both;
   font-size: 1rem;
   font-weight: 500;
   color: #5c5e60;
 }
 
-#chart1Title {
+.chart1Title {
   padding-left: 1rem;
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 500;
   padding-top: 1rem;
   margin: 0;
+  color: #5c5e60;
+
 }
 
 /*Social media icons*/
@@ -333,6 +329,7 @@ main {
   height: 4rem;
   background: #7c65f2;
   border-radius: 50%;
+  /*position: relative;*/
 }
 
 .svg-pic {
@@ -358,4 +355,134 @@ main {
   margin-left: 5rem;
   margin-top: -3rem;
   color: #5c5e60;
+}
+
+/*Widgets box*/
+.members-list {
+  display: block;
+}
+
+.members-list:last-child {
+  padding-bottom: 1rem;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 3rem;
+  height: auto;
+  padding: 1rem;
+  float: left;
+}
+
+.member-name {
+  padding-top: 1rem;
+}
+
+.member-email {
+  color: blue;
+  font-size: .9rem;
+  padding: 0;
+  margin-top: -.5rem;
+}
+
+.member-date {
+  float: right;
+  margin-right: 2rem;
+  margin-top: -.5rem;
+}
+
+.member-line {
+  margin-top: 2rem;
+  width: 90%;
+  background-color: #c6c9c4;
+}
+
+.member-comment {
+  color: grey;
+  font-size: .9rem;
+  padding: 0;
+  margin-top: -.5rem;
+}
+
+.form {
+  display: block;
+  height: auto;
+}
+
+.form p {
+  margin-left: 1rem;
+}
+
+.border {
+  border: 1px solid #d2cfd5;
+  border-radius: 5px;
+  background-color: rgba(227, 225, 233, 0.31);
+}
+
+.space {
+  width: 85%;
+  margin: 1rem;
+}
+/*Arrows styles Switch and Buttons*/
+
+i {
+    border: solid #7c65f2;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    margin: 2rem 0 0  8rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.smaller {
+  width: 5rem;
+  margin-left: 10%;
+}
+
+#send {
+  width: 90%;
+  background: #7c65f2;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: .8rem;
+  margin-left: .8rem;
+  margin-bottom: 1rem;
+}
+
+#save {
+  width: 35%;
+  background: #7c65f2;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: .8rem;
+  float: left;
+  margin: 1rem;
+}
+
+#cancel {
+  width: 35%;
+  background: darkgrey;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: .8rem;
+  float: right;
+  margin: 1rem;
+}
+
+#select {
+  width: 90%;
+  padding: .8rem;
+  color: grey;
+}
+
+#select option {
+  color: darkgrey;
+  height
 }
