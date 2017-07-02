@@ -64,7 +64,7 @@ var chartLeft = new Chart(ctxLeft, {
                 left: 15,
                 right: 15,
                 top: 15,
-                bottom: 30
+                bottom: 40
             }
         },
       title: {
@@ -118,7 +118,7 @@ var chartRight = new Chart(ctxRight, {
                 left: 15,
                 right: 15,
                 top: 15,
-                bottom: 30
+                bottom: 40
             }
         },
       title: {

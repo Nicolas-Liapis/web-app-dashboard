@@ -39,6 +39,7 @@
     border-left: none;
     border-right: none;
     height: 300px;
+    margin-bottom: 1rem;
   }
 
   .sec-chart2 {
@@ -47,11 +48,72 @@
     border: 1px solid #d2cfd5;
     border-right: none;
     height: 300px;
+    margin-bottom: 1rem;
   }
+
+  .sec-chart3 {
+    float: left;
+    width: 49.3%;
+    border: 1px solid #d2cfd5;
+    height: 602.5px;
+  }
+
+  .sec-chart4 {
+    float: right;
+    width: 50.25%;
+    border: 1px solid #d2cfd5;
+    border-right: none;
+    height: auto;
+  }
+
+  .sec-chart5 {
+    float: left;
+    width: 49.3%;
+    border: 1px solid #d2cfd5;
+    border-bottom: none;
+    height: 352px;
+  }
+
+  .sec-chart6 {
+    float: right;
+    width: 50.25%;
+    border: 1px solid #d2cfd5;
+    border-right: none;
+    border-bottom: none;
+    height: auto;
+  }
+
+.stats-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.member-line {
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0;
+}
 
 .chartControls span {
   margin-right: 1rem;
 }
 
+.bigger {
+  height: 2rem;
+}
+.bigger1 {
+  height: 9.4rem;
+}
 
+}
+
+@media only screen and (min-width: 1014px) {
+  i {
+    margin-left: 3rem;
+  }
+
+  #cross {
+    margin-top: 1.7rem;
+    margin-left: 11rem;
+  }
 }

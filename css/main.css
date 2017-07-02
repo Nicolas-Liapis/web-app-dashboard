@@ -244,6 +244,16 @@ main {
   height: auto;
 }
 
+.sec-chart5 {
+  border: 1px solid #d2cfd5;
+  height: auto;
+}
+
+.sec-chart6 {
+  border: 1px solid #d2cfd5;
+  height: auto;
+}
+
 .widget-area {
   border: 1px solid #d2cfd5;
   /*border-bottom: none;*/
@@ -334,22 +344,28 @@ main {
 }
 
 .social-box span {
-  color: #7c65f2;
-  font-weight: 600;
+  color: #5c5e60;
+  font-weight: 400;
   margin-left: 1rem;
+  font-size: 1.5rem;
+  margin-top: -.5rem;
 }
 
 .social-box p {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-left: 5rem;
   margin-top: -3rem;
-  color: #5c5e60;
+  color: #7c65f2;
 }
 
 /*Widgets box*/
 .members-list {
   display: block;
+}
+
+.members-list1 {
+  display: flex;
+  flex-direction: row;
 }
 
 .members-list:last-child {
@@ -392,6 +408,13 @@ main {
   font-size: .9rem;
   padding: 0;
   margin-top: -.5rem;
+  padding-left: 2rem;
+  width: 90%;
+}
+
+.member-activity {
+  margin-left: 1rem;
+  color: grey;
 }
 
 .form {
@@ -414,12 +437,14 @@ main {
 }
 /*Arrows styles Switch and Buttons*/
 
+
 i {
     border: solid #7c65f2;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 6px;
-    margin: 2rem 0 0  8rem;
+    margin-top: 4rem;
+    margin-right: .5rem;
 }
 
 .right {
