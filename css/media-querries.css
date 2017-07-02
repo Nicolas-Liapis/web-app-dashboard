@@ -1,7 +1,57 @@
-@media only screen and (min-width: 320px) {
-  /** {
-    border: 1px solid red;
-  }*/
+@media only screen and (min-width: 768px) {
+
+
+  header {
+    height: 4rem;
+  }
+
+  #bell {
+    width: 1.6rem;
+    margin-top: 1%;
+    margin-left: 70%;
+  }
+
+  #prof-name {
+    font-size: .9rem;
+    margin-left: 85%;
+  }
+
+  #search {
+    line-height: 1.5rem;
+  }
+
+  main {
+    width: calc(100% /12 * 10.5);
+  }
+
+  .main-chart-container {
+      margin-left: 2rem;
+  }
+
+  #cross {
+    padding-bottom: 1.5rem;
+  }
+
+  .sec-chart1 {
+    float: left;
+    width: 49.7%;
+    border: 1px solid #d2cfd5;
+    border-left: none;
+    border-right: none;
+    height: 300px;
+  }
+
+  .sec-chart2 {
+    float: right;
+    width: 50.1%;
+    border: 1px solid #d2cfd5;
+    border-right: none;
+    height: 300px;
+  }
+
+.chartControls span {
+  margin-right: 1rem;
+}
 
 
 }
