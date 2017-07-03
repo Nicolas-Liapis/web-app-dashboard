@@ -1,11 +1,17 @@
+var hourly_dataset = ['750', '1250', '1000', '1500', '2000', '1750', '1250', '1750', '2250', '1750', '2250'];
+var daily_dataset = ['0', '1000', '1500', '1750', '1250', '1000', '2250', '2500', '2570'];
+var weekly_dataset = ['0', '1250', '1500', '1750', '1250', '1750', '2250', '1750', '2250'];
+var monthly_dataset = ['0', '1250', '1500', '1750', '1250', '1750', '2250', '1750', '2250'];
+var labels = ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-7", "18-24", "25-31",];
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-7", "18-24", "25-31", ""],
+        labels: labels,
         datasets: [{
             // label: false,
-            data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
+            data: hourly_dataset,
             backgroundColor: [
                 'rgba(174, 166, 244, 0.42)'
             ],
@@ -38,13 +44,22 @@ var myChart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero:false
+                    beginAtZero: true
                 }
             }]
         }
     }
   }
 });
+
+// var daily_chart = new Chart(ctx);
+// $("#chart2").click(function() {
+//     var data = daily_chart.config.data;
+//     data.datasets[0].data = daily_dataset;
+//     data.datasets[1].data = daily_dataset;
+//     data.labels = chart_labels;
+//     daily_chart.update();
+// });
 
 var ctxLeft = document.getElementById('myChartLeft').getContext('2d');
 var chartLeft = new Chart(ctxLeft, {

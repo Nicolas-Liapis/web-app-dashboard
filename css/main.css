@@ -260,20 +260,16 @@ main {
   height: 500px;
 }
 
-.social-container {
-  /*border: 1px solid #d2cfd5;*/
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /*justify-content: space-around;*/
+.stats-box {
+
+  justify-content: space-around;
 }
 
 .social-box {
   margin: 2rem;
   border: 1px solid #d2cfd5;
   border-radius: 5px;
-  width: 10rem;
+  width: 12rem;
   height: 5rem;
   padding: .5rem;
   display: block;
@@ -287,11 +283,7 @@ main {
 .container:last-child {
   border-bottom: none;
 }
-/*.separator {
-  background: #cac6cb;
-  border: 1px solid #cac6cb;
-  width: 100%;
-}*/
+
 
 /*Charts styles*/
 
@@ -434,6 +426,11 @@ main {
 .space {
   width: 85%;
   margin: 1rem;
+}
+
+.member-line1 {
+  width: 80%;
+  margin-top: 3rem;
 }
 /*Arrows styles Switch and Buttons*/
 

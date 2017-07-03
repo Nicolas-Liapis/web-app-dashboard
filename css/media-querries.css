@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
 
 
   header {
@@ -53,8 +53,9 @@
 
   .sec-chart3 {
     float: left;
-    width: 49.3%;
+    width: 49.44%;
     border: 1px solid #d2cfd5;
+    border-right: none;
     height: 602.5px;
   }
 
@@ -63,14 +64,15 @@
     width: 50.25%;
     border: 1px solid #d2cfd5;
     border-right: none;
-    height: auto;
+    height: 602.5px;
   }
 
   .sec-chart5 {
     float: left;
-    width: 49.3%;
+    width: 49.44%;
     border: 1px solid #d2cfd5;
     border-bottom: none;
+    border-right: none;
     height: 352px;
   }
 
@@ -80,7 +82,7 @@
     border: 1px solid #d2cfd5;
     border-right: none;
     border-bottom: none;
-    height: auto;
+    height: 352px;
   }
 
 .stats-box {
@@ -107,14 +109,10 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
-
-  main {
-    margin-right: 3rem;
-  }
+@media only screen and (min-width: 1023px) {
 
   .left-dash {
-    margin-left: -1.3rem;
+    /*margin-left: rem;*/
   }
 
   i {
@@ -125,4 +123,5 @@
     margin-top: 1.7rem;
     margin-left: 11rem;
   }
+
 }
