@@ -25,17 +25,3 @@ bell.addEventListener('click', function(){
     alert('You have one alert.');
   }
 });
-
-function select() {
-  var targetElement = event.target;
-
-  $( ".select" ).siblings().css( "background-color", "white");
-  $( ".select" ).siblings().css( "color", "#5c5e60");
-  $( ".select" ).siblings().css( "border", "none");
-
-  targetElement.style.backgroundColor = '#48dd7a';
-  targetElement.style.color = 'white';
-  targetElement.style.border = '4px solid #48dd7a';
-  targetElement.style.borderRadius = '5px';
-
-};

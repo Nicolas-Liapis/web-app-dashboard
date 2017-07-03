@@ -314,6 +314,12 @@ main {
 
 }
 
+#chart1 {
+  background: #48dd7a;
+  color: white;
+  border: 4px solid #48dd7a;
+  border-radius: 5px;
+}
 /*Social media icons*/
 
 .svg-box {
