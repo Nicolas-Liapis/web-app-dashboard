@@ -2,7 +2,18 @@ const cross = document.getElementById('cross');
 
 cross.addEventListener('click', function(){
   document.getElementById('demo').style.display = "none";
-  document.getElementById('st1').style.display = "none";
+});
+
+const cross1 = document.getElementById('cross1');
+
+cross1.addEventListener('click', function(){
+  document.getElementById('demo1').style.display = "none";
+});
+
+const cross2 = document.getElementById('cross2');
+
+cross2.addEventListener('click', function(){
+  document.getElementById('demo2').style.display = "none";
 });
 
 function message() {
@@ -19,9 +30,7 @@ function message() {
 const bell = document.getElementById('bell');
 
 bell.addEventListener('click', function(){
-  if (document.getElementById('st1').style.display == 'none') {
-    alert('You have no alerts.');
-  } else {
-    alert('You have one alert.');
-  }
+  document.getElementById('demo1').style.display = 'flex';
+  document.getElementById('demo2').style.display = 'flex';
+  document.getElementById('st1').style.display = "none";
 });

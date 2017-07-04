@@ -200,6 +200,9 @@ main {
   color: white;
   padding: .5rem;
 }
+.hidden {
+  display: none;
+}
 
 #alert {
   color: white;
@@ -208,6 +211,19 @@ main {
 }
 
 #cross {
+  color: white;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  margin: 0 auto;
+}
+#cross1 {
+  color: white;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  margin: 0 auto;
+}
+
+#cross2 {
   color: white;
   font-size: 1rem;
   padding-bottom: .5rem;

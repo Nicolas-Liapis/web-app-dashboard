@@ -29,7 +29,8 @@
   }
 
   #cross {
-    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 6rem;
   }
 
   .sec-chart1 {
@@ -156,7 +157,7 @@
 
   #cross {
     margin-top: 1.7rem;
-    margin-left: 11rem;
+    margin-left: 18rem;
   }
   #time {
     width: 93%;
