@@ -215,9 +215,10 @@
                     <option>Larisa Coprinu</option>
                     <option>Morgan Foreman</option>
                     <option>Jickael Mackson</option>
+                    <option>Donald Truck</option>
                   </datalist>
                   <textarea id="textarea" class="space border bigger1" rows="4" cols="23" placeholder="Message for user"></textarea>
-                  <button id="send" onclick="message()">Send</button>
+                  <button id="send" onclick="message(); return false;">Send</button>
                 </form>
               </div>
               </div>
@@ -226,44 +227,49 @@
                     <span>SETTINGS</span>
                   </div>
                 <div class="form">
-                  <p> Send email notification</p>
-                  <label class="switch-light switch-ios smaller" onclick="">
-                    <input type="checkbox">
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                  </label>
-                  <p> Set profile to public</p>
-                  <label class="switch-light switch-ios smaller" onclick="">
-                    <input type="checkbox">
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                  </label>
+                  <div class="form-grid">
+                    <p> Send email notification</p>
+                    <label class="switch-light switch-ios smaller" onclick="">
+                      <input type="checkbox" id="checkbox1">
+                      <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-grid">
+                    <p class="margin-right"> Set profile to public</p>
+                      <label class="switch-light switch-ios smaller" onclick="">
+                        <input type="checkbox" id="checkbox2">
+                        <span>
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                        </span>
+                      </label>
+                  </div>
                   <form>
-                    <select id="select" class="space border">
-                      <option value="select">Select Timezone</option>
+                    <select id="time" class="space border">
+                      <option value="" disable selected>Select Timezone</option>
                       <option value="gmt2">GMT +2</option>
                       <option value="gmt3">GMT +3</option>
                       <option value="gmt4">GMT +4</option>
                     </select>
-                    <button id="save">Save</button>
-                    <button id="cancel">Cancel</button>
+                    <button id="save" onclick="return false;" type="submit">Save</button>
+                    <button id="cancel" onclick="return false;" type="submit">Cancel</button>
                   </form>
                 </div>
               </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
-    <script src="js/chart.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/alert.js" type="text/javascript"></script>
     <script src="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
         crossorigin="anonymous">
     </script>
+    <script src="js/chart.js" type="text/javascript"></script>
+    <script src="js/alert.js" type="text/javascript"></script>
+    <script src="js/storage.js" type="text/javascript"></script>
+
   </body>
 </html>

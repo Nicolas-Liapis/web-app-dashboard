@@ -107,6 +107,26 @@
   height: 9.4rem;
 }
 
+.form-grid {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.form-grid label {
+  margin-top: .5rem;
+}
+
+.margin-right {
+  margin-right: 1.7rem;
+}
+
+#time {
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+  width: 90%;
+}
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -122,6 +142,9 @@
   #cross {
     margin-top: 1.7rem;
     margin-left: 11rem;
+  }
+  #time {
+    width: 93%;
   }
 
 }
