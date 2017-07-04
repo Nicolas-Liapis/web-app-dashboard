@@ -85,6 +85,11 @@
     height: 352px;
   }
 
+  .social-box {
+    margin: 1rem;
+    width: 16rem;
+  }
+
 .stats-box {
   display: flex;
   flex-direction: row;
@@ -127,6 +132,16 @@
   width: 90%;
 }
 
+#save {
+  width: 40%;
+
+}
+
+#cancel {
+  width: 40%;
+
+}
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -147,4 +162,18 @@
     width: 93%;
   }
 
+  .social-span {
+    padding-right: 1rem;
+  }
+
+  .social-box {
+    margin: 2rem;
+    width: 13rem;
+  }
+
+  .social-box span {
+    margin-left: 1rem;
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
 }
