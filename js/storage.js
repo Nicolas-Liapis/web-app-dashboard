@@ -10,7 +10,6 @@ save_button.addEventListener('click', function() {
   var switch2 = document.getElementById('checkbox2');
   localStorage.setItem('switch2', switch2.checked);
 
-  console.log(localStorage.switch1);
   // timezone
   var timezone = document.getElementById('time');
   localStorage.setItem('timezone', time.value);
@@ -19,12 +18,13 @@ save_button.addEventListener('click', function() {
 function load() {
   // checkboxes
 // var check1 = localStorage.getItem('switch1');
- var check1 = localStorage.getItem('switch1');
- console.log(check1);
+ var check1 = JSON.parse(localStorage.getItem('switch1'));
 
+ document.getElementById('checkbox1').checked = check1;
 
+ var check2 = JSON.parse(localStorage.getItem('switch2'));
 
-
+ document.getElementById('checkbox2').checked = check2;
 
 
   // timezone
